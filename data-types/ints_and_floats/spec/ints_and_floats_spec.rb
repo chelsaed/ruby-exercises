@@ -1,71 +1,71 @@
 RSpec.describe 'ints and floats' do
-  it 'test 1' do
+  it 'can add two ints' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # add the lucky number and the unlucky number
-    sum = ________
+    sum = lucky + unlucky
     expect(sum).to eq(20)
   end
 
-  xit 'test 2' do
+  it 'can subtract two ints' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # subtract the unlucky from the lucky
-    difference = ________
+    difference = lucky - unlucky
     expect(difference).to eq(-6)
   end
 
-  xit 'test 3' do
+  it 'can divide two inits' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # divide unlucky by lucky
     # NOTE: this is integer division
-    quotient = ________
+    quotient = unlucky / lucky
     expect(quotient).to eq(1)
   end
 
-  xit 'test 4' do
+  it 'can divide two inits also' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # divide unlucky by lucky
-    quotient = ________
+    quotient = unlucky.to_f / lucky
     expect(quotient).to eq(1.8571428571428572)
   end
 
-  xit 'test 5' do
+  it 'can find the remainder' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # find the remainder of the unlucky divided by the lucky
-    remainder = ____________
+    remainder = unlucky % lucky
     expect(remainder).to eq(6)
   end
 
-  xit 'test 6' do
+  it 'can create a false statement' do
     lucky = 7
     # Using the variable defined above,
     # find out if the lucky number is even
-    even = _________
+    even = lucky == even
     expect(even).to eq(false)
   end
 
-  xit 'test 7' do
+  xit 'can round a number to the nearest whole number' do
     pi = 3.14
     # Using the variable defined above,
     # round the number to the nearest whole number
-    rounded = _________
+    rounded = round(pi)
     expect(rounded).to eq(3)
   end
 
-  xit 'test 8' do
+  xit 'can round ints to one decimal' do
     pi = 3.14
     # Using the variable defined above,
     # round the number to one decimal place
-    rounded = _________
+    rounded = 
     expect(rounded).to eq(3.1)
   end
 
@@ -73,7 +73,7 @@ RSpec.describe 'ints and floats' do
     pi = 3.14
     # Using the variable defined above,
     # round the number to the next highest whole number
-    rounded = _________
+    rounded = 
     expect(rounded).to eq(4)
   end
 end

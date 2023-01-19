@@ -146,31 +146,32 @@ RSpec.describe 'Arrays' do
     furniture = ["couch", "bed", "table"]
     # Call a method on the furniture variable to add the element
     # "dresser" in between the elements "couch" and "bed"
-    new_furniture = furniture.push([1],"dresser")
+    new_furniture = furniture.insert(1, "dresser")
     expect(new_furniture).to eq(["couch", "dresser", "bed", "table"])
   end
 
-  xit 'test 15' do
+  it 'can combine two strings' do
     children = ["Sarah", "Owen", "Peter"]
     # Call a method on the children variable to combine them into
     # one string like this: "Sarah, Owen, Peter"
-    one_string = children
+    one_string = children.join(","" ")
     expect(one_string).to eq("Sarah, Owen, Peter")
   end
 
-  xit 'test 16' do
+  it 'can change array to go in the opposite order' do
     ascending = [1,2,3,4,5]
     # Call a method on the ascending variable to create an array
     # with the elements in the opposite order
-    descending = ascending
+    descending = ascending.reverse
     expect(descending).to eq([5,4,3,2,1])
   end
 
-  xit 'test 17' do
+  it 'can get a random element out of the array
+  ' do
     dice = [1,2,3,4,5,6]
     # Call a method on the dice variable to get a random element out
     # of the array
-    roll = dice
+    roll = dice.sample()
     expect(roll <= 6).to eq(true)
     expect(roll >= 1).to eq(true)
     # Note, this assertion assumes the Ruby Version is 2.4 or higher.

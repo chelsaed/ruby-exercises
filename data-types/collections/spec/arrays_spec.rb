@@ -44,6 +44,7 @@ RSpec.describe 'Arrays' do
     hummus = ["tahini", "chickpeas", "lemons"]
     # Call a method on the hummus variable that will
     # tell us how many elements there are in the array
+    hummus.count
     expect(hummus.count).to eq(3)
   end
 

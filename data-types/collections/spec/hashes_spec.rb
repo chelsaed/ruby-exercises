@@ -1,13 +1,13 @@
 RSpec.describe 'Hashes' do
-  it 'test 1' do
+  it 'can create a new empty hash' do
     # In the line below, create a new empty hash called empty
-    empty = ______
+    empty = ({})
     expect(empty).to eq({})
   end
 
-  xit 'test 2' do
+  it 'can create a hash with a default value of 0' do
     # In the line below, create an empty hash with a default value 0
-    empty = ______
+    empty = {} 
     expect(empty[:not_found]).to eq(0)
   end
 

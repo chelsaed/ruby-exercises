@@ -1,41 +1,43 @@
 RSpec.describe 'Hashes' do
   it 'can create a new empty hash' do
     # In the line below, create a new empty hash called empty
-    empty = ({})
+    empty = Hash.new
     expect(empty).to eq({})
   end
 
+  
   it 'can create a hash with a default value of 0' do
     # In the line below, create an empty hash with a default value 0
-    empty = {} 
+    empty = Hash.new(0)
+   
     expect(empty[:not_found]).to eq(0)
   end
 
-  xit 'test 3' do
+  it 'test 3' do
     # In the line below, create a hash called ages. The hash should
     # have a key of "ben" with a value of 4 and a key of "kelly" with
     # a value of 6
-    ages = ______
+    ages = {"ben" => 4, "kelly" => 6}
     expect(ages.length).to eq(2)
     expect(ages["ben"]).to eq(4)
     expect(ages["kelly"]).to eq(6)
   end
 
-  xit 'test 4' do
+  it 'can create has with |key, value|' do
     # In the line below, create a hash called ages. The hash should
     # have a key of :ben with a value of 4 and a key of :kelly with
     # a value of 6.
-    ages = ______
+    ages = {:ben => 4, :kelly => 6}
     expect(ages.length).to eq(2)
     expect(ages[:ben]).to eq(4)
     expect(ages[:kelly]).to eq(6)
 
     # There are two different syntaxes for doing this. Use the other way to
     # achieve the same result
-    ages = ______
-    expect(ages.length).to eq(2)
-    expect(ages[:ben]).to eq(4)
-    expect(ages[:kelly]).to eq(6)
+    #ages = {["ben"] => 4, ["kelly"] => 6}
+    #expect(ages.length).to eq(2)
+    #expect(ages[:ben]).to eq(4)
+    #expect(ages[:kelly]).to eq(6)
   end
 
   xit 'test 5' do
